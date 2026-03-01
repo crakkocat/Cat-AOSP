@@ -1,4 +1,4 @@
-#🐱 Cat-AOSP
+🐱 𝗖𝗮𝘁-𝗔𝗢𝗦𝗣
 
 Cat-AOSP is a custom fork of Dolphin Emulator (based on build 2512).
 
