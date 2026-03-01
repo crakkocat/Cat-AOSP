@@ -108,7 +108,12 @@ Any Linux distribution
 Legacy-iOS-Kit
 
 Installation Steps
-cd <LegacyiOSKit>
+Run:
+cd LegacyiOSKit directory
+
+Replace "LegacyiOSKit directory" with it's directory on your computer.
+Then run:
+
 bash restore.sh
 
 Or:
