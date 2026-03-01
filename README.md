@@ -1,6 +1,4 @@
-# Cat-AOSP
-🐱 Cat-AOSP
-
+#🐱 Cat-AOSP
 Cat-AOSP is a custom fork of Dolphin Emulator (based on build 2512).
 
 It focuses on:
@@ -109,7 +107,7 @@ Any Linux distribution
 Legacy-iOS-Kit
 
 Installation Steps
-cd <LegacyiOSKit directory>
+cd <LegacyiOSKit>
 bash restore.sh
 
 Or:
