@@ -112,7 +112,7 @@ Installation Steps
 Run:
 cd LegacyiOSKit directory
 
-Replace "LegacyiOSKit directory" with it's directory on your computer.
+Replace "LegacyiOSKit directory" with its directory on your computer.
 Then run:
 
 bash restore.sh
