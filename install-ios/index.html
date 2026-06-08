@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cat-AOSP iOS Installation Guide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            line-height: 1.6;
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        h1, h2, h3 {
+            color: #ff9900;
+        }
+
+        .warning {
+            color: #ff5555;
+            font-weight: bold;
+        }
+
+        code {
+            background-color: #222;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        pre {
+            background-color: #222;
+            padding: 12px;
+            border-radius: 6px;
+            overflow-x: auto;
+        }
+
+        a {
+            color: #66b3ff;
+        }
+
+        hr {
+            border: 1px solid #333;
+            margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🍎 iOS Installation Guide</h1>
+
+    <p class="warning">
+        ⚠️ The IPA cannot be installed directly. It must be sideloaded.
+    </p>
+
+    <hr>
+
+    <h2>🪟 Windows Setup</h2>
+
+    <h3>Requirements</h3>
+    <ul>
+        <li>Windows 10 or later</li>
+        <li>
+            iTunes (non-Microsoft Store version):
+            <br>
+            <a href="https://support.apple.com/en-us/106372">
+                https://support.apple.com/en-us/106372
+            </a>
+        </li>
+        <li>
+            iCloud (non-Microsoft Store version):
+            <br>
+            <a href="http://updates-http.cdn-apple.com/2020/windows/001-39935-20200911-1A70AA56-F448-11EA-8CC0-99D41950005E/iCloudSetup.exe">
+                Download iCloud
+            </a>
+        </li>
+    </ul>
+
+    <p class="warning">
+        ⚠️ Do NOT use Microsoft Store versions.
+    </p>
+
+    <h3>Sideloading Tools</h3>
+    <ul>
+        <li>3uTools</li>
+        <li>AltServer</li>
+        <li>Sideloadly (Recommended – supports automatic re-signing)</li>
+    </ul>
+
+    <h3>Installation Steps</h3>
+    <ol>
+        <li>Install iTunes and iCloud.</li>
+        <li>Install a sideload tool.</li>
+        <li>Connect your iOS device.</li>
+        <li>Sign the Cat-AOSP IPA.</li>
+        <li>Install to device.</li>
+        <li>
+            On device:
+            <br>
+            <strong>Settings → General → VPN &amp; Device Management</strong>
+        </li>
+        <li>Trust your developer profile.</li>
+        <li>Launch Cat-AOSP.</li>
+    </ol>
+
+    <hr>
+
+    <h2>🍎 macOS Setup</h2>
+
+    <h3>Requirements</h3>
+    <ul>
+        <li>macOS 10.14 or lower (iTunes required)</li>
+        <li>iCloud (pre-installed)</li>
+    </ul>
+
+    <h3>Tools</h3>
+    <ul>
+        <li>3uTools</li>
+        <li>AltServer</li>
+        <li>Sideloadly (Recommended)</li>
+    </ul>
+
+    <h3>Steps</h3>
+    <ol>
+        <li>Install sideload tool.</li>
+        <li>Connect device.</li>
+        <li>Sideload the IPA.</li>
+        <li>Trust developer profile.</li>
+        <li>Launch the app.</li>
+    </ol>
+
+    <hr>
+
+    <h2>🐧 Linux Setup</h2>
+
+    <h3>Requirements</h3>
+    <ul>
+        <li>Any Linux distribution</li>
+        <li>Legacy-iOS-Kit</li>
+    </ul>
+
+    <h3>Installation Steps</h3>
+
+    <p>Run:</p>
+
+    <pre><code>cd &lt;LegacyiOSKit directory&gt;</code></pre>
+
+    <p>
+        Replace <code>&lt;LegacyiOSKit directory&gt;</code> with its directory on your computer.
+        Then run:
+    </p>
+
+    <pre><code>bash restore.sh</code></pre>
+
+    <p>Or:</p>
+
+    <pre><code>./restore.sh</code></pre>
+
+    <ol>
+        <li>Enter your password if prompted.</li>
+        <li>Select <strong>App Management</strong>.</li>
+        <li>Choose the Cat-AOSP IPA.</li>
+        <li>Sign the app.</li>
+        <li>Launch it on your device.</li>
+    </ol>
+
+    <hr>
+
+    <h2>⚠️ Important Notes</h2>
+
+    <ul>
+        <li>Free Apple developer accounts expire every 7 days.</li>
+        <li>Re-signing is required unless using a paid Apple Developer account.</li>
+        <li>Sideloadly auto-refresh is recommended for convenience.</li>
+    </ul>
+
+</body>
+</html>
